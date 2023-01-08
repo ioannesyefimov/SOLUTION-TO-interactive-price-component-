@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="ipc-outer-container">
+    <div class="icp-inner-container">
+      <div class="ipc-text-container">
+        <h1 class="title">Simple, traffic-based pricing</h1>
+        <p class="sub-title">Sign-up for our 30-day trial. No credit card required. </p>
+      </div>
+      <div class="ipc-main-container">
+        <div class="cost-per-view">
+          <div class="views-container">
+            <span class="pageviews" id="pageviews">100</span> <span class="pageviews">Pageviews</span></div>
+          <input class='slider' type="range" name="price-slider" id="price-slider" min="-2" max="2" step="1" value="0" aria-valuemin="'-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider">
+          
+          <div class="cost-container">
+            <span class="cost-element" id="cost-element">16.00</span>
+            
+            <span class="cost-period" id="cost-period">/ month</span>
+          </div>
+        </div>
+
+        <div class="billing-interval-container">
+          <span class="monthy-switch">Monthly Billing</span>
+          <label for="checkbox" class="switch">
+            <input  type="checkbox" id="interval-switch" data-is-checked="false">
+            <div class="slider round"></div>
+
+          </label>
+      
+          <div class="flex-group">
+            <span class="yearly-switch">Yearly Billing</span>
+              <span class="yearly-discount">-25% <span data-is-mobile="true" class="discount">discount</span></span>
+            </div>
+
+          <div class="error-container" data-is-active="false">
+            <img src="./images/381599_error_icon.svg" alt="">
+            <p class="error">please choose billing period</p>
+          </div>
+      
+      
+        </div>
+  
+        <div class="ipc-last-section">
+          <div class="ipc-feautures-container">
+            <div class="flex-feauture">
+              <img src="images/icon-check.svg" alt="">
+              <p>Unlimited websites</p>
+            </div>
+      
+            <div class="flex-feauture">
+              <img src="images/icon-check.svg" alt="">
+              <p>100% data ownership</p></div>
+            <div class="flex-feauture">
+              <img src="images/icon-check.svg" alt="">
+              <p>Email reports</p>
+            </div>
+          </div>
+           <button class="btn"><a href="index.html">Start my trial</a></button>
+       </div>
+
+    </div>
+
+
+  </div>
+  
+  
+  
+  
+  
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
